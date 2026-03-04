@@ -1,147 +1,132 @@
-🏠 California Housing Price Prediction
-Multiple Linear Regression (Machine Learning Project)
-📌 Project Overview
+# 🏠 California Housing Price Prediction
 
-This project implements a Multiple Linear Regression model to predict house prices using the California Housing dataset.
+This project implements a **Machine Learning model using Multiple Linear Regression** to predict house prices based on features from the California Housing dataset.
 
-The model is trained using all available features and allows users to input house details to get a predicted price.
+## 📊 Project Overview
 
-This project demonstrates a complete end-to-end Machine Learning pipeline including:
+The goal of this project is to build a regression model that predicts the **median house value** based on several housing-related features such as income, location, population, and housing characteristics.
 
-Data loading
+The project demonstrates a complete **end-to-end machine learning pipeline** including data preprocessing, model training, evaluation, visualization, and prediction.
 
-Train-test splitting
+---
 
-Feature scaling
+## ⚙️ Technologies Used
 
-Model training
+* Python
+* NumPy
+* Scikit-learn
+* Matplotlib
+* Seaborn
+* Git & GitHub
 
-Model evaluation
+---
 
-Interactive user prediction system
+## 📂 Dataset
 
-📊 Dataset Used
+The dataset used is the **California Housing dataset** available in Scikit-learn.
 
-California Housing Dataset (from Scikit-learn)
+Features used in the model:
 
-Features used:
-
-Median Income (MedInc)
-
-House Age (HouseAge)
-
-Average Rooms (AveRooms)
-
-Average Bedrooms (AveBedrms)
-
-Population (Population)
-
-Average Occupancy (AveOccup)
-
-Latitude (Latitude)
-
-Longitude (Longitude)
+* Median Income (`MedInc`)
+* House Age (`HouseAge`)
+* Average Rooms (`AveRooms`)
+* Average Bedrooms (`AveBedrms`)
+* Population (`Population`)
+* Average Occupancy (`AveOccup`)
+* Latitude (`Latitude`)
+* Longitude (`Longitude`)
 
 Target Variable:
 
-Median House Value (MedHouseVal)
+* Median House Value (`MedHouseVal`)
 
-Note: The target value is in units of $100,000.
+Note: House prices are represented in units of **$100,000**.
 
-⚙️ Technologies Used
+---
 
-Python
+## 🧠 Machine Learning Workflow
 
-NumPy
+1. Load dataset from Scikit-learn
+2. Split dataset into training and testing sets
+3. Apply feature scaling using **StandardScaler**
+4. Train a **Linear Regression** model
+5. Evaluate model performance using:
 
-Scikit-learn
+   * Mean Squared Error (MSE)
+   * Root Mean Squared Error (RMSE)
+   * R² Score
+6. Accept user input for predicting house price
 
-StandardScaler
+---
 
-LinearRegression
+## 📈 Model Performance
 
-Git & GitHub
+Example results:
 
-🧠 Machine Learning Workflow
+* **MSE:** ~0.55
+* **RMSE:** ~0.74
+* **R² Score:** ~0.57
 
-Load dataset
+The model explains approximately **57% of the variance** in housing prices.
 
-Split into training and testing sets
+---
 
-Apply feature scaling using StandardScaler
+## 📊 Visualizations
 
-Train LinearRegression model
+This project also includes visualizations using **Matplotlib and Seaborn**, such as:
 
-Evaluate using:
+* Feature vs House Price scatter plots
+* Histogram distributions of features
+* Actual vs Predicted price comparison
+* Residual plots
+* Correlation heatmap
 
-Mean Squared Error (MSE)
+These visualizations help better understand the dataset and model performance.
 
-Root Mean Squared Error (RMSE)
+---
 
-R² Score
-
-Accept user input for real-time prediction
-
-📈 Model Performance
-
-Example Results:
-
-MSE: 0.55
-
-RMSE: 0.74
-
-R² Score: 0.57
-
-The model explains approximately 57% of the variance in house prices.
-
-This serves as a strong baseline model for regression.
-
-💻 How to Run the Project
+## 🚀 How to Run the Project
 
 Clone the repository:
 
-git clone <your-repository-link>
+```bash
+git clone https://github.com/Sriram63034/MLLinearRegressionModelMultipleFeatures.git
+```
 
 Install dependencies:
 
-pip install numpy scikit-learn
+```bash
+pip install -r requirements.txt
+```
 
-Run the program:
+Run the project:
 
+```bash
 python CaliforniaHouse.py
+```
 
-Enter house feature values when prompted.
+Enter the requested feature values to predict house prices.
 
-🚀 Future Improvements
+---
 
-Add feature engineering
-
-Implement Polynomial Regression
-
-Try advanced models (Random Forest, Gradient Boosting)
-
-Convert to a web application (Flask/Django/Streamlit)
-
-Save and load trained model using joblib
-
-🎯 Learning Outcomes
+## 🎯 Learning Outcomes
 
 Through this project, I learned:
 
-How to build a regression model from scratch
+* Building a **Machine Learning regression model**
+* Data preprocessing and **feature scaling**
+* Evaluating models using **MSE, RMSE, and R²**
+* Creating **data visualizations**
+* Using **Git and GitHub** for project version control
 
-Importance of train-test split
+---
 
-Feature scaling and preprocessing
+## 👨‍💻 Author
 
-Evaluating model performance
-
-Preventing data leakage
-
-Building an interactive ML prediction system
-
-👨‍💻 Author
-
-Devana Sriram
+**Devana Sriram**
 B.Tech CSE (AI & ML)
 Aspiring AI Engineer
+
+---
+
+
